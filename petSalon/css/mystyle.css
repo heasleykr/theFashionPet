@@ -6,14 +6,15 @@
 }
 body{
     background-color: white;
+    /* background-color: #d0f2fb; */
     color: black;
-    background-image: url(../img/texture.jpg);
 }
 #dogBack{
-    background-image: url(../img/dogBack2.jpg);
+    background-image: url(../img/dogBack3.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 50rem;
+    filter: drop-shadow(4px 10px 4px #3b3b44);
 }
 /* Navigation Styling*/
 nav{
@@ -60,18 +61,31 @@ h1{
 }
 /* Body Styling */
 #newsImg{
-    display: flex;
-    margin-top: 4rem;
+    display: flow;
+    margin-top: 8rem;
+    padding-bottom: 8rem;
 }
 #newsImg h2{
     color: black;
     font-size: 4rem;
     font-family: 'Oranienbaum', serif;
+    text-align: center;
     text-transform: uppercase;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 8rem;
+}
+#newsImg img{
+    justify-content: left;
+}
+#newsBig{
+    display: flex;
+}
+#newsBig p{
+    font-size: 1.7rem;
     padding-top: 8rem;
-    margin: 10rem;
 }
 #newsText{
     font-size: 1.2rem;
@@ -79,6 +93,8 @@ h1{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 #newsText i{
     font-size: 3rem;
@@ -88,7 +104,8 @@ h1{
     grid-column: 1;
     grid-row: 1/3;
     text-align: center;
-    border-bottom: 2px solid black;
+    background-color: #cfe1f0;
+    border: 1px solid black;
     padding-bottom: 4rem;
     margin-top: 10rem;
 }
@@ -96,18 +113,19 @@ h1{
     grid-column: 2;
     grid-row: 1/3;
     text-align: center;
-    border-top: 2px solid black;
+    background-color: #cfe1f0;
+    border: 1px solid black;
 }
 #p3{
     grid-column: 3;
     grid-row: 1/3;
     text-align: center;
+    background-color: #cfe1f0;
     margin-top: 10rem;
-    border-bottom: 2px solid black;
+    border: 1px solid black;
 }
 /* Footer Styling */
 footer{
-    background-color: #d0f2fb;
     background-repeat: no-repeat;
     width: 100%;
     height: 36rem;
@@ -128,11 +146,13 @@ footer{
 #grid2{
     grid-column: 1;
     grid-row: 2/4;
+    padding-top: 2rem;
     border-top: 2px solid black;
 }
 #grid3{
     grid-column: 3;
     grid-row: 2/4;
+    padding-top: 2rem;
     border-top: 2px solid black;
 }
 #grid4{
@@ -140,6 +160,7 @@ footer{
     grid-row: 3;
 }
 #copyright{
+    padding-top: 2rem;
     text-align: center;
 }
 #footName{
